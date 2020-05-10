@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="negative-margin">
+            <div class="overlay"></div>
+            <div class="p-0 side-bar">
+                <div class="side-bar-container">
+                    <!-- brand -->
+                    <div class="brand my-4 px-2">
+                        <a href="index.html">
+                            <i class="fas fa-paw ml-2"></i>
+                            <span class="ml-2 font-weight-bold d-none d-lg-inline">Dashboards</span>
+                        </a>
+                    </div>
+                    <!-- profile info -->
+                    <div class="profile-info px-3 d-none d-lg-block">
+                        <div class="media">
+                            <img src="images/img.jpg" alt="profile" class="rounded-circle" width="50px">
+                            <div class="media-body pl-3">
+                                <span class="text-muted">welcome,</span>
+                                <br>
+                                <span>Colt Dave</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- heading -->
+                    <h3 class="px-3 text-light small mt-4 d-none d-lg-block general">GENERAL</h3>
+                    <!-- navigation -->
+                    <ul class="nav flex-column">
+                        <!-- home -->
+                        <li class="nav-item navigation-item active">
+                            <a class="nav-link  d-flex justify-content-between align-items-center px-3">
+                                <span class="column">
+                                    <i class="fas fa-home mr-lg-2"></i>
+                                    <span>Home</span>
+                                </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="child-nav-item list-unstyled">
+                                <li class="active"><a href="index.html">Default</a></li>
+                                <li><a href="alternative.html">Alternative</a></li>
+                            </ul>
+                        </li>
+                        <!-- profile -->
+                        <li class="nav-item navigation-item">
+                            <a href="profile.html" class="nav-link active d-flex justify-content-between align-items-center px-3">
+                                <span class="column">
+                                    <i class="far fa-user mr-lg-2"></i>
+                                    <span>Profile</span>
+                                </span>
+                            </a>
+                        </li>
+                        <!-- project -->
+                        <li class="nav-item navigation-item">
+                            <a href="project.html" class="nav-link active d-flex justify-content-between align-items-center px-3">
+                                <span class="column">
+                                    <i class="fas fa-project-diagram mr-lg-2"></i>
+                                    <span>Project</span>
+                                </span>
+                            </a>
+                        </li>
+                        <!-- team -->
+                        <li class="nav-item navigation-item">
+                            <a href="team.html" class="nav-link active d-flex justify-content-between align-items-center px-3">
+                                <span class="column">
+                                    <i class="fas fa-users mr-lg-2"></i>
+                                    <span>team</span>
+                                </span>
+                            </a>
+                        </li>
+                        <!-- orders -->
+                        <li class="nav-item navigation-item">
+                            <a href="orders.html" class="nav-link active d-flex justify-content-between align-items-center px-3">
+                                <span class="column">
+                                    <i class="fas fa-users mr-lg-2"></i>
+                                    <span>Orders</span>
+                                </span>
+                            </a>
+                        </li>
+                        <!-- sign up -->
+                        <li class="nav-item navigation-item">
+                            <a href="signup.html" class="nav-link active d-flex justify-content-between align-items-center px-3">
+                                <span class="column">
+                                    <i class="fas fa-user-plus mr-lg-2"></i>
+                                    <span>Sign Up</span>
+                                </span>
+                            </a>
+                        </li>
+                        <!-- sign in -->
+                        <li class="nav-item navigation-item">
+                            <a href="signin.html" class="nav-link active d-flex justify-content-between align-items-center px-3">
+                                <span class="column">
+                                    <i class="fas fa-sign-in-alt mr-lg-2"></i>
+                                    <span>Sign in</span>
+                                </span>
+                            </a>
+                        </li>
+                        <!-- Error -->
+                        <li class="nav-item navigation-item">
+                            <a href="error.html" class="nav-link active d-flex justify-content-between align-items-center px-3">
+                                <span class="column">
+                                    <i class="fas fa-exclamation-triangle mr-lg-2"></i>
+                                    <span>Error</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- side-bar -->
+
+
+            <!-- header -->
+            <header class="top-nav col-12 px-0">
+                <div class="row m-0 px-3 d-flex justify-content-between align-items-center">
+                    <!-- toggler -->
+                    <div class="nav-toggler">
+                        <button class="btn btn-default">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!-- mails and profile -->
+                    <div class="mails-profile d-flex align-items-center">
+                        <div class="dropdown">
+                            <button class="btn btn-default p-0 dropdown-toggle" type="button" id="mails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-envelope h5 m-0"></i>
+                                <span class="number-of-mails badge badge-success rounded-circle">5</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="mails">
+                                <ul class="list-unstyled my-0">
+                                    <li class="px-0 mx-1 small">
+                                        <a href="#" class="media dropdown-item px-1">
+                                            <img src="images/img.jpg" class="mr-3" alt="mailer" width="50px">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 mb-1 d-flex justify-content-between">
+                                                    <span>Sean</span><em class="small">1 minute ago</em></h5>
+                                                <p class="m-0">
+                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="px-0 mx-1 small my-1">
+                                        <a href="#" class="media dropdown-item px-1">
+                                            <img src="images/img.jpg" class="mr-3" alt="mailer" width="50px">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 mb-1 d-flex justify-content-between">
+                                                    <span>Sean</span><em class="small">1 minute ago</em></h5>
+                                                <p class="m-0">
+                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="px-0 mx-1 small">
+                                        <a href="#" class="media dropdown-item px-1">
+                                            <img src="images/img.jpg" class="mr-3" alt="mailer" width="50px">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 mb-1 d-flex justify-content-between">
+                                                    <span>Sean</span><em class="small">1 minute ago</em></h5>
+                                                <p class="m-0">
+                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="px-0 mx-1 small my-1">
+                                        <a href="#" class="dropdown-item px-1 text-center py-3">
+                                            <span>See all mails </span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle d-flex align-items-center" type="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/img.jpg" class="rounded-circle mr-2" alt="profile picture"
+                                    width="40px">
+                                <span>Colt Dave</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="profile">
+                                <a class="dropdown-item" href="#">profile</a>
+                                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#"><span>settings</span><span class="badge badge-danger">50%</span></a>
+                                <a class="dropdown-item" href="#">help</a>
+                                <a class="dropdown-item" href="#">logout <i class="fas fa-sign-out-alt ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- -------------------------------- main content -------------------------------------- -->
+            <div class="flex-fill bg-light" id="main-content">
+
+                <!-- main content -->
+                <div class="container-fluid">
+                    <!-- small cards -->
+                    <div class="row my-5">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card mt-4 mt-lg-0">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters m-0">
+                                        <div class="col">
+                                            <h3 class="small">BUDGET</h3>
+                                            <span class="font-weight-bold">$50,450</span>
+                                            <small class="badge badge-success font-weight-lighter">+2.5%</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign text-muted"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card mt-4 mt-lg-0">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters m-0">
+                                        <div class="col">
+                                            <h3 class="small">TOTAL HOURS</h3>
+                                            <span class="font-weight-bold">540.8</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-suitcase text-muted"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card mt-4 mt-lg-0">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters m-0">
+                                        <div class="col">
+                                            <h3 class="small">PROGRESS</h3>
+                                            <div class="row align-items-center m-0 no-gutters">
+                                                <span class="col-auto font-weight-bold mr-2">$50,450</span>
+                                                <div class="col pr-2">
+                                                    <span class="progress" style="height: 3px;">
+                                                        <span class="progress-bar" role="progressbar" style="width: 75%"
+                                                            aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="far fa-clipboard"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card mt-4 mt-lg-0">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters m-0">
+                                        <div class="col">
+                                            <h3 class="small">COST/UNIT</h3>
+                                            <span class="font-weight-bold">$30.45</span>
+                                        </div>
+                                        <div class="col-auto" id="cost-per-unit" style="width: 50%; height: 55px;">
+                                            <!-- graph goes here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- -------------------------------------------------------------- -->
+
+                    <!-- graph gards -->
+                    <div class="row justify-content-between mb-5">
+                        <div class="col-lg-8">
+                            <div class="card mt-4 mt-lg-0">
+                                <div class="card-header">
+                                    <h3>Orders</h3>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div id="orders" style="width: 100%;height: 300px;">
+                                        <!-- graph goes here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card mt-4 mt-lg-0">
+                                <div class="card-header">
+                                    <h3>Devices</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div id="devices" style="width: 100%;height: 300px;">
+                                        <!-- graph goes here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- projects and performance -->
+                    <div class="row my-5">
+                        <!-- projects -->
+                        <div class="col-lg-4">
+                            <div class="card projects mt-4 mt-lg-0">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h3>Projects</h3>
+                                    <a href="#">View all</a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <img src="images/img.jpg" width="40px" class="mr-3" alt="project">
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="my-0 font-weight-bold">Travels & Time</h6>
+                                            <em class="small">Updated 5hr ago</em>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- hr -->
+                                    <hr class="my-2">
+                                    <!-- -- -->
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <img src="images/img.jpg" width="40px" class="mr-3" alt="project">
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="my-0 font-weight-bold">Travels & Time</h6>
+                                            <em class="small">Updated 5hr ago</em>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- hr -->
+                                    <hr class="my-2">
+                                    <!-- -- -->
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <img src="images/img.jpg" width="40px" class="mr-3" alt="project">
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="my-0 font-weight-bold">Travels & Time</h6>
+                                            <em class="small">Updated 5hr ago</em>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- hr -->
+                                    <hr class="my-2">
+                                    <!-- -- -->
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <img src="images/img.jpg" width="40px" class="mr-3" alt="project">
+                                        </div>
+                                        <div class="col">
+                                            <h6 class="my-0 font-weight-bold">Travels & Time</h6>
+                                            <em class="small">Updated 5hr ago</em>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- performance -->
+                        <div class="col-lg-8">
+                            <div class="card performance mt-4 mt-lg-0">
+                                <div class="card-header">
+                                    <h3>performance</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div id="performance" style="width: 100%;height: 300px;">
+                                        <!-- graph goes here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- goals -->
+                    <div class="row">
+                        <div class="col-12 pb-5">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h3>Goals</h3>
+                                    <a href="#" class="btn btn-link border">Export</a>
+                                </div>
+                                <div class="card-body px-0 pt-0">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="border-0">
+                                                        <a href="#" class="text-muted sort" data-sort="goal-project">
+                                                            Goal
+                                                            <i class="fas fa-sort text-muted"></i>
+                                                        </a>
+                                                    </th>
+                                                    <th class="border-0">
+                                                        <a href="#" class="text-muted sort" data-sort="goal-status">
+                                                            Status
+                                                            <i class="fas fa-sort text-muted"></i>
+                                                        </a>
+                                                    </th>
+                                                    <th class="border-0">
+                                                        <a href="#" class="text-muted sort" data-sort="goal-progress">
+                                                            Progress
+                                                            <i class="fas fa-sort text-muted"></i>
+                                                        </a>
+                                                    </th>
+                                                    <th class="border-0">
+                                                        <a href="#" class="text-muted sort" data-sort="goal-date">
+                                                            Due date
+                                                            <i class="fas fa-sort text-muted"></i>
+                                                        </a>
+                                                    </th>
+                                                    <th class="border-0 text-right">
+                                                        Team
+                                                    </th>
+                                                    <th class="border-0"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="list">
+                                                <tr>
+                                                    <td class="goal-project">
+                                                        Update the API
+                                                    </td>
+                                                    <td class="goal-status">
+                                                        <span class="text-warning">●</span> In progress
+                                                    </td>
+                                                    <td class="goal-progress">
+                                                        55%
+                                                    </td>
+                                                    <td class="goal-date">
+                                                        <time datetime="2018-10-24">07/24/18</time>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="avatar-group">
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else
+                                                                    here</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="goal-project">
+                                                        Release v1.2-Beta
+                                                    </td>
+                                                    <td class="goal-status">
+                                                        <span class="text-warning">●</span> In progress
+                                                    </td>
+                                                    <td class="goal-progress">
+                                                        25%
+                                                    </td>
+                                                    <td class="goal-date">
+                                                        <time datetime="2018-10-24">07/24/18</time>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="avatar-group">
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else
+                                                                    here</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="goal-project">
+                                                        GDPR Compliance
+                                                    </td>
+                                                    <td class="goal-status">
+                                                        <span class="text-success">●</span> Completed
+                                                    </td>
+                                                    <td class="goal-progress">
+                                                        100%
+                                                    </td>
+                                                    <td class="goal-date">
+                                                        <time datetime="2018-10-24">07/24/18</time>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="avatar-group">
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else
+                                                                    here</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="goal-project">
+                                                        v1.2 Documentation
+                                                    </td>
+                                                    <td class="goal-status">
+                                                        <span class="text-danger">●</span> Cancelled
+                                                    </td>
+                                                    <td class="goal-progress">
+                                                        0%
+                                                    </td>
+                                                    <td class="goal-date">
+                                                        <time datetime="2018-10-24">07/24/18</time>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="avatar-group">
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else
+                                                                    here</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="goal-project">
+                                                        Plan Design Offsite
+                                                    </td>
+                                                    <td class="goal-status">
+                                                        <span class="text-success">●</span> Completed
+                                                    </td>
+                                                    <td class="goal-progress">
+                                                        100%
+                                                    </td>
+                                                    <td class="goal-date">
+                                                        <time datetime="2018-10-24">07/24/18</time>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="avatar-group">
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                            <a href="profile-posts.html" class="avatar" title="Colt Dave">
+                                                                <img src="images/img.jpg" class="avatar-img rounded-circle" alt="" width="25px">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else
+                                                                    here</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -----------------------------  scripts ------------------------------------ -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- --------------------------------------------------------------------------- -->
+</body>
+
+</html>
